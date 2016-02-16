@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery with Ajax Ordering Point of Sale</title>
+	<link rel="stylesheet" href="style.css"  />
+</head>
+<body>
+	<div class="orderPageHeading">
+		<h1>Ordering Page</h1>
+	</div>
+	
+	
+	<div class="NewOrdersDiv">
+		<h4>Add A New Order</h4>
+		<p>Name: <input type="text" id="name"</p>
+		<p>Drink: <input type="text" id="drink"></p>
+		<p>Sandwich: <input type="text" id="sandwich"></p>
+		<button id="add-order">Add</button>
+	</div>
+
+	<h2 id="currentOrderHeader">Current Sandwich Orders</h2>
+	<ul id="orders"></ul>	
+	<template id="order-template">
+		<li data-id="{{id}}">
+			<p>
+				<strong>Name:</strong>
+				<span class='noedit name'>{{name}}</span>
+				<input class='edit name'/>
+			</p>
+			<p>
+				<strong>Drink:</strong>
+				<span class='noedit drink'>{{drink}}</span>
+				<input class='edit drink'/>
+			</p>
+			<p>
+				<strong>Sandwich:</strong>
+				<span class='noedit sandwich'>{{sandwich}}</span>
+				<input class='edit sandwich'/>
+			</p>
+		<button data-id='{{id}}' class='remove'>Remove</button>
+		<button class="editOrder noedit">Edit</button>
+		<button class="saveEdit edit">Save</button>
+		<button class="cancelEdit edit">Cancel</button>
+		</li>
+	</template>
+	
+
+
+
+
+
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="main.js"></script>
+	<script src="mustache.min.js"></script>
+</body>
+</html>

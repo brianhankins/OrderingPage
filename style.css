@@ -1,0 +1,56 @@
+body {
+	padding: 50px;
+	font: 14px "Lucinda Grande", Helvetica, Arial, sans-serif;
+}
+
+.orderPageHeading {
+	text-align: center;
+	color: blue;
+}
+
+.NewOrdersDiv {
+	margin-top: 75px;
+	color: green;
+}
+
+.NewOrdersDiv h4 {
+	margin-left: 50px;
+}
+
+
+#currentOrderHeader {
+	margin-top: 75px;
+	color: orange;
+}
+
+#currentOrderHeader {
+	margin-left: 30px;
+}
+
+a {
+	color: #00B7FF;
+}
+
+ul {
+	margin-top: 20px;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	background: #efefef;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+ul li .edit {
+	display: none;
+}
+
+ul li.edit .edit {
+	display: inline;
+}
+
+ul li.edit .noedit {
+	display: none;
+}
